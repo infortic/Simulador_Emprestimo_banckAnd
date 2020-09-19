@@ -32,6 +32,7 @@ Solução para contratação de empréstimos. Permitindo a simulação antes de 
 
 ### Retorno da API:
 
+- Informações do cliente;
 - Data da Simulacao;
 - Data Validade Simulação;
 - Valor Contrato;

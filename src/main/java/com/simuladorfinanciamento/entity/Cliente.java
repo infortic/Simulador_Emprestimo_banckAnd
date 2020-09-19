@@ -61,9 +61,9 @@ public class Cliente extends AbstractId implements Serializable {
 		return serialVersionUID;
 	}
 
-	public Cliente(BigDecimal cPF, String nome, String email, SimuladorEmprestimo simuladorEmprestimo) {
+	public Cliente(BigDecimal i, String nome, String email, SimuladorEmprestimo simuladorEmprestimo) {
 		super();
-		cpf = cPF;
+		cpf = i;
 		this.nome = nome;
 		this.email = email;
 		this.simuladorEmprestimo = simuladorEmprestimo;
@@ -73,5 +73,15 @@ public class Cliente extends AbstractId implements Serializable {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+
+	@Override
+	public String toString() {
+		return "Cliente [cpf=" + cpf + ", nome=" + nome + ", email=" + email + ", simuladorEmprestimo="
+				+ simuladorEmprestimo + ", getCPF()=" + getCPF() + ", getNome()=" + getNome() + ", getEmail()="
+				+ getEmail() + ", getSimuladorEmprestimo()=" + getSimuladorEmprestimo() + ", hashCode()=" + hashCode()
+				+ ", getId()=" + getId() + ", getClass()=" + getClass() + ", toString()=" + super.toString() + "]";
+	}
+	
+	
 
 }

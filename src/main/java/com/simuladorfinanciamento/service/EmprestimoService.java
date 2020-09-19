@@ -81,8 +81,8 @@ public class EmprestimoService {
 		String msg = "TRUE";
 		Double numParc = Double.parseDouble(payload.getQuantidadeParcelas());
 		msg = numParc > 24 ? "O número máximo de parcelas é 24" : msg;
-		msg = this.contractUtil.isCPF(payload.getCpf()) ? msg : "CPF inválido";
-		msg = this.contractUtil.validarEmail(payload.getEmail()) ? msg : "EMAIL invalido";
+		msg = this.contractUtil.isCPF(payload.getCpf()) ? msg : "CPF inválido!";
+		msg = this.contractUtil.validarEmail(payload.getEmail()) ? msg : "EMAIL invalido!";
 		System.out.println(msg);
 		return msg;
 	}
